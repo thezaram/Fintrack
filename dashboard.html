@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /* overflow: hidden; */
+      }
+      body .navigation {
+        width: 100%;
+        max-width: 250px;
+        height: 100vh;
+        /* padding: 50px; */
+        background-color: #5067aa;
+        display: flex;
+        flex-direction: column;
+        /* border: solid 1px blue; */
+      }
+      body .navigation .main-logo {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        padding-left: 30px;
+        margin-left: 10px;
+        /* border: solid 1px blue; */
+        flex: 0.5;
+      }
+      body .navigation .side-navbar {
+        /* height: 500px; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        gap: 10px;
+        margin-top: 20px;
+        flex: 3;
+        /* border: solid 1px red; */
+      }
+      body .navigation .side-navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin: 0 10px;
+        border-radius: 30px;
+      }
+      body .navigation .side-navbar a:hover {
+        background-color: white;
+        color: #5067aa;
+      }
+      body .navigation .logout-button {
+        margin-top: auto 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        /* align-items: center; */
+        /* border: solid 1px yellow; */
+      }
+      body .navigation .logout-button a {
+        color: rgb(226, 16, 16);
+        text-decoration: none;
+        padding: 5px 30px;
+        margin: 0 10px;
+        border-radius: 20px;
+        border: 1px solid white;
+        /* border: solid 1px yellow; */
+      }
+      body .navigation .logout-button a:hover {
+        background-color: white;
+        color: #5067aa;
+      }
+
+      /* MAIN SECTION */
+      body .main-content {
+      }
+    </style>
+  </head>
+  <body>
+    <section class="navigation">
+      <div class="main-logo">
+        <img src="./images/logos/logo 1.jpg" alt="" />
+      </div>
+      <nav class="side-navbar">
+        <a href="">
+          <img src="" alt="" />
+          <span>Dashboard</span>
+        </a>
+        <a href="">
+          <img src="" alt="" />
+          <span>Report</span>
+        </a>
+        <a href="">
+          <img src="" alt="" />
+          <span>Add Transaction</span>
+        </a>
+        <a href="">
+          <img src="" alt="" />
+          <span>Budget</span>
+        </a>
+        <a href="">
+          <img src="" alt="" />
+          <span>Profile</span>
+        </a>
+      </nav>
+      <div class="logout-button">
+        <img src="" alt="" />
+        <a href="">Logout</a>
+      </div>
+    </section>
+    <section class="main-content">
+      <header>
+        <h2 class="greeting"></h2>
+      </header>
+    </section>
+  </body>
+</html>
