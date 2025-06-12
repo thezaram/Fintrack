@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="file_report.css" /> -->
 
@@ -12,13 +15,14 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        font-family: "Work Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Work Sans", "Segoe UI", Tahoma, Geneva, Verdana,
+          sans-serif;
         /* overflow: hidden; */
       }
       body .dashboard-container {
         display: flex;
-        height: max-content;
-        min-height: 100vh;
+        /* height: max-content; */
+        /* min-height: 100vh; */
       }
       body .navigation {
         width: 100%;
@@ -83,272 +87,62 @@
         background-color: white;
         color: #5067aa;
       }
-
-      /* MAIN SECTION */
-      body .main-content {
+      .report {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 280px;
-        padding: 20px 20px 20px 50px;
-        background-color: #5067aa;
-        color: white;
-        position: relative;
-        /* border-bottom-left-radius: 3%;
-        border-bottom-right-radius: 3%; */
+        /* width: 100%; */
+        margin: 20px;
         /* border: 1px solid red; */
       }
-      body .main-content .top-bg-img {
-        position: absolute;
+      .report :nth-child(1) {
+        text-align: center;
       }
-      body .main-content header {
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-        width: 100%;
-        /* border: 1px solid; */
-      }
-      body .main-content header .greetings {
-        flex: 10;
-      }
-      body .main-content header .greetings p {
-      }
-      body .main-content header .greetings h3 {
-        font-size: 30px;
-        margin-top: 20px;
-      }
-      body .main-content header .header-card {
-        display: flex;
-        flex-direction: column;
-        width: 415px;
-        height: 220px;
-        border-radius: 20px;
-        padding: 20px;
-        background-color: #86a6df;
-        /* border: 1px solid red; */
-      }
-      body .main-content header .header-card .card-top {
-        flex: 10;
-      }
-      body .main-content header .header-card .card-top p {
-        font-size: 24px;
-        display: flex;
-        /* justify-content: center; */
-        align-items: center;
-      }
-      body .main-content header .header-card .card-top p span {
-        transform: translateY(5px);
-        margin-left: 10px;
-      }
-      body .main-content header .header-card .card-top h3 {
-        font-size: 32px;
-      }
-      body .main-content header .header-card .card-bottom {
-        flex: 5;
+      .report-two {
         display: flex;
         justify-content: space-between;
-        /* border: 1px solid red; */
-      }
-
-      body .main-content header .header-card .card-bottom p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-      }
-      body .main-content header .header-card .card-bottom p:nth-child(2) {
-        font-size: 20px;
-        font-weight: 600;
-      }
-      body .main-content header .bell-icon {
-        width: 50px;
-        margin-left: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        /* border: 1px solid; */
-      }
-      body .main-content header .bell-icon img {
-        height: 30px;
-      }
-      body .main-content header .bell-icon::after {
-        content: "";
-        position: absolute;
-        height: 12px;
-        width: 12px;
-        background-color: orange;
-        border-radius: 50%;
-        top: 3px;
-        right: 12px;
-      }
-
-      /* report section */
-      :root {
-        --main-color: #8a8a8a;
-        --border-hover-color: #464646;
-        --button-hover-bg-color: #f4f4f4;
-
-        --pseudo-width1: 0;
-        --pseudo-width2: 0;
-        --pseudo-width3: 0;
-        --pseudo-width4: 0;
-      }
-
-      .container {
-        /* height: 100svh; */
-        display: flex;
-        flex-direction: column;
-        margin-top: 100px;
-        align-items: center;
-        position: relative;
-        background-color: #f7f8fb;
-        /* overflow: hidden; */
-        /* border: 2px solid blue */
-      }
-
-      .card {
-        width: 1000px;
-        background-color: #fff;
-        border-radius: 10px;
-        position: absolute;
-        /* box-shadow: 5px 5px 15px #e4e4e4; */
-        /* border: 2px solid red; */
-      }
-      .card button {
-        cursor: pointer;
-        width: max-content;
-        background-color: transparent;
-        border: none;
-        border-radius: 5px;
-        margin: 0;
-      }
-      .card-one {
-        width: 400px;
-        padding: 3% 5% 1%;
-        top: 10%;
-        z-index: 1;
-        transition: top 0.5s linear, width 0.5s linear;
-        /* margin-top: 10svh; */
-      }
-
-      .card-one * {
-        transition: width 0.3s linear, font-size 0.3s linear;
-      }
-      .card-one h1 {
-        font-size: 22px;
-        text-align: center;
-        line-height: 0.05;
-        color: var(--main-color);
-      }
-      .head-section,
-      .chart-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        /* border: 2px solid red */
-      }
-      .head-section h2 {
-        color: #000;
-        font-size: 24px;
-        flex: 1;
-        font-weight: 500;
-        text-align: center;
-      }
-
-      .head-section button {
-        padding: 10px;
-        font-size: 16px;
-        color: var(--main-color);
-        /* font-weight: 600; */
-        line-height: 0.2;
-        border: 0.2px solid var(--main-color);
-      }
-
-      .head-section button:hover {
-        color: var(--border-hover-color);
-        border-color: var(--border-hover-color);
-        background-color: var(--button-hover-bg-color);
-      }
-
-      .chart-section {
-        position: relative;
-        /* border: 2px solid blue; */
-      }
-
-      .chart-section li {
-        list-style: none;
-        position: relative;
-        margin: 10px 0;
-      }
-
-      .pie-chart {
-        flex: 1;
-        height: 100%;
-        /* width: 70%; */
-        left: -40px;
-        display: flex;
-        align-items: center;
-        position: relative;
-        /* border: 2px solid green; */
-      }
-      .chart-value {
-        position: absolute;
-        height: 100%;
         width: 100%;
+        padding: 20px;
+      }
+      .report-two :nth-child(1) {
+        border-bottom: 8px solid #5067aa;
+        border-radius: 5px;
+      }
+      .report-three {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* border: 2px solid red; */
+        justify-content: space-between;
+        padding: 0 100px;
       }
-
-      .chart-value > * {
-        margin: 0;
+      .report-three :nth-child(1) {
+        background-color: #5067aa;
+        color: white;
+        width: 80px;
+        border-radius: 10px;
       }
-      .my-chart {
-        height: 25svh;
+      .expense {
+        display: flex;
+        justify-content: space-between;
       }
-
-      .size {
-        /* margin-left: 100px; */
-        font-size: 16px;
-        color: black;
-        margin-right: 10px;
-        /* border: 2px solid red */
+      .expense img {
+        width: 200px;
+        height: 200px;
       }
-
-      .legend li::before {
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        top: 20%;
-        left: -15px;
-        border-radius: 50%;
-        background-color: #000000;
+      .img{
+        width: 100%;
       }
-
-      .legend li:nth-child(1)::before {
-        background-color: var(--legend1);
+      .transfer {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fbfbfb;
+        margin: 5px 0;
+        padding: 10px;
       }
-
-      .legend li:nth-child(2)::before {
-        background-color: var(--legend2);
-      }
-
-      .legend li:nth-child(3)::before {
-        background-color: var(--legend3);
-      }
-
-      .legend li:nth-child(4)::before {
-        background-color: var(--legend4);
-      }
-
-      .legend-values {
-        font-weight: 700;
-      }
+    .transfer-one{
+      display: flex;
+      gap: 5px;
+    }
+    .red{
+      color: red;
+    }
     </style>
   </head>
   <body>
@@ -358,11 +152,11 @@
           <img src="./images/logos/logo 1.jpg" alt="" />
         </div>
         <nav class="side-navbar">
-          <a href="">
+          <a href="dashboard.html">
             <img src="" alt="" />
             <span>Dashboard</span>
           </a>
-          <a href="">
+          <a href="report.html">
             <img src="" alt="" />
             <span>Report</span>
           </a>
@@ -384,70 +178,76 @@
           <a href="">Logout</a>
         </div>
       </section>
-      <section class="main-content">
-        <img src="./images/top-bg-img.svg" alt="" class="top-bg-img" />
-        <header>
-          <div class="greetings">
-            <p>Good afternoon,</p>
-            <h3>Enjelin Morgeana</h3>
-          </div>
-          <div class="header-card">
-            <div class="card-top">
-              <p>Total Balance <span>^</span></p>
-              <h3>$ 2,548.00</h3>
-            </div>
-            <div class="card-bottom">
-              <div class="card-bottom-left">
-                <p>
-                  <span><img src="./images/arrow-up.svg" alt="" /></span>
-                  <span>Income</span>
-                </p>
-                <p>$ 2,548.00</p>
-              </div>
-              <div class="card-bottom-right">
-                <p>
-                  <span><img src="./images/arrow-up.svg" alt="" style="rotate: 180deg" /></span>
-                  <span>Expenses</span>
-                </p>
-                <p>$ 248.00</p>
-              </div>
-            </div>
-          </div>
-          <div class="bell-icon">
-            <img src="./images/bell-icon.svg" alt="" class="notification-icon" />
-          </div>
-        </header>
-
-        <div class="container">
-          <div class="card card-one">
-            <!-- <h1>FILE REPORT</h1> -->
-            <div class="head-section">
-              <h2 class="head-title">Recent Expenses:</h2>
-            </div>
-            <div class="chart-section">
-              <div class="pie-chart">
-                <div class="chart-value">
-                  <p>Total</p>
-                  <h2>$47.1k</h2>
+      <div class="report">
+        <div>
+          <h2>Report</h2>
+        </div>
+        <div class="report-two">
+          <h2>Expense</h2>
+          <h2>Income</h2>
+        </div>
+        <div class="report-three">
+          <p>Week</p>
+          <p>Month</p>
+        </div>
+        <div class="expense">
+          <img src="./images/Group.png" alt="" />
+          <img src="./images/Frame 200.png" alt="" />
+        </div>
+        <div class="img">
+          <img src="./images/Frame 209.png" alt="" />
+          <div class="img">
+            <img src="./images/Frame 18.png" alt="" />
+            <div>
+              <div class="transfer">
+                <div class="transfer-one">
+                  <img src="./images/Frame 9.png" alt="" />
+                  <div>
+                    <p>Transfer</p>
+                    <p>Yesterday</p>
+                  </div>
                 </div>
-                <canvas class="my-chart"></canvas>
+                <div class="red">
+                  <p>-$150.00</p>
+                </div>
+                <div>
+                  <p>42%</p>
+                </div>
               </div>
-              <ul class="legend size">
-                <li>Food</li>
-                <li>Transport</li>
-                <li>Charity</li>
-                <li>Other</li>
-              </ul>
-              <ul class="legend-values size">
-                <li>52.3%</li>
-                <li>22.8%</li>
-                <li>13.9%</li>
-                <li>11.2%</li>
-              </ul>
+            </div>
+            <div>
+              <div class="transfer">
+                <div class="transfer-one">
+                  <div>
+                    <p>Investment Banking</p>
+                  </div>
+                </div>
+                <div class="red">
+                  <p>-$150.00</p>
+                </div>
+                <div>
+                  <p>42%</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="transfer">
+                <div class="transfer-one">
+                  <div>
+                    <p>Investment Banking</p>
+                  </div>
+                </div>
+                <div class="red">
+                  <p>-$150.00</p>
+                </div>
+                <div>
+                  <p>42%</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
     <script src="file_report.js" defer></script>

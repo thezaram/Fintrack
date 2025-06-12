@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>FinTrack</title>
     <!-- <link rel="stylesheet" href="file_report.css" /> -->
 
     <style>
@@ -12,7 +15,8 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        font-family: "Work Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Work Sans", "Segoe UI", Tahoma, Geneva, Verdana,
+          sans-serif;
         /* overflow: hidden; */
       }
       body .dashboard-container {
@@ -23,7 +27,7 @@
       body .navigation {
         width: 100%;
         max-width: 250px;
-        height: max-content;
+        max-height: 159vh;
         min-height: 100vh;
         /* padding: 50px; */
         background-color: #5067aa;
@@ -41,7 +45,7 @@
         flex: 0.5;
       }
       body .navigation .side-navbar {
-        /* height: 500px; */
+        height: 500px;
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
@@ -66,8 +70,8 @@
         margin-top: 100px;
         display: flex;
         justify-content: center;
-        margin-bottom: 50px;
-        /* align-items: center; */
+        margin-bottom: 1000px;
+        align-items: center;
         /* border: solid 1px yellow; */
       }
       body .navigation .logout-button a {
@@ -90,7 +94,7 @@
         flex-direction: column;
         width: 100%;
         height: 280px;
-        padding: 20px 20px 20px 50px;
+        /* padding: 20px 20px 20px 50px; */
         background-color: #5067aa;
         color: white;
         position: relative;
@@ -195,23 +199,29 @@
         --pseudo-width4: 0;
       }
 
-      .container {
+      .first-container {
         /* height: 100svh; */
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
-        align-items: center;
-        position: relative;
-        background-color: #f7f8fb;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        margin: 50px 0 0 0;
+        padding: 0;
+        /* width: 100%; */
+        /* border-radius: 10px; */
+        /* align-items: center; */
+        /* position: relative; */
+        background-color: #f5fdfd;
         /* overflow: hidden; */
         /* border: 2px solid blue */
       }
 
       .card {
-        width: 1000px;
+        /* width: 100%; */
         background-color: #fff;
         border-radius: 10px;
-        position: absolute;
+        margin: 20px 40px;
+        /* position: absolute; */
         /* box-shadow: 5px 5px 15px #e4e4e4; */
         /* border: 2px solid red; */
       }
@@ -349,6 +359,30 @@
       .legend-values {
         font-weight: 700;
       }
+      .down-section {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 20px;
+        width: 100%;
+        text-align: right;
+        color: #000;
+      }
+      .frame{
+        display: flex;
+        gap: 5px;
+      }
+      .inner-frame{
+        text-align: left;
+      }
+      .green{
+        color: green;
+      }
+      .red{
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -359,10 +393,10 @@
         </div>
         <nav class="side-navbar">
           <a href="">
-            <img src="" alt="" />
+            <img src="./dashboard.html" alt="" />
             <span>Dashboard</span>
           </a>
-          <a href="">
+          <a href="report.html">
             <img src="" alt="" />
             <span>Report</span>
           </a>
@@ -381,7 +415,7 @@
         </nav>
         <div class="logout-button">
           <img src="" alt="" />
-          <a href="">Logout</a>
+          <a href="index.html">Logout</a>
         </div>
       </section>
       <section class="main-content">
@@ -406,7 +440,12 @@
               </div>
               <div class="card-bottom-right">
                 <p>
-                  <span><img src="./images/arrow-up.svg" alt="" style="rotate: 180deg" /></span>
+                  <span
+                    ><img
+                      src="./images/arrow-up.svg"
+                      alt=""
+                      style="rotate: 180deg"
+                  /></span>
                   <span>Expenses</span>
                 </p>
                 <p>$ 248.00</p>
@@ -414,13 +453,16 @@
             </div>
           </div>
           <div class="bell-icon">
-            <img src="./images/bell-icon.svg" alt="" class="notification-icon" />
+            <img
+              src="./images/bell-icon.svg"
+              alt=""
+              class="notification-icon"
+            />
           </div>
         </header>
-
-        <div class="container">
+        <div class="first-container">
+         <div class="container">
           <div class="card card-one">
-            <!-- <h1>FILE REPORT</h1> -->
             <div class="head-section">
               <h2 class="head-title">Recent Expenses:</h2>
             </div>
@@ -445,9 +487,57 @@
                 <li>11.2%</li>
               </ul>
             </div>
+            </div>
+            <div class="down">
+              <div class="down-section">
+                <div class="frame">
+                  <img src="./images/Frame 9 (1).png" alt="" />
+                <div>
+                  <p>Upwork</p>
+                  <p>Today</p>
+                </div>
+              </div>
+            <div class="green">
+              <p>+$850</p>
+            </div>
+            <div>
+              <p>INCOME</p>
+            </div>
+          </div>
+      
+          <div class="down-section">
+            <div class="frame">
+              <img src="./images/Frame 9.png" alt="" />
+            <div class="inner-frame">
+              <p>Transfer</p>
+              <p>Yesterday</p>
+            </div>
+          </div>
+          <div class="red">
+            <p>-$85</p>
+          </div>
+          <div>
+            <p>EXPENSE</p>
           </div>
         </div>
-      </section>
+      
+        <div class="down-section">
+          <div class="frame">
+            <img src="./images/Frame 9 (2).png" alt="" />
+            <div class="inner-frame">
+              <p>Youtube</p>
+              <p>jan 16,2025</p>
+            </div>
+          </div>
+          <div class="red">
+            <p>-$11.99</p>
+          </div>
+          <div>
+            <p>EXPENSE</p>
+          </div>
+        </div>
+      </div>
+     </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
     <script src="file_report.js" defer></script>
